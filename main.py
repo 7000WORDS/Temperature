@@ -17,13 +17,16 @@ elif W == "fahrenheit":
 elif W == "kelvin":
     p = input("what temperature do you want to convert to: ")
     if p == "celsius":
-        v = int(input("Enter the temperature in celsius: "))
+        v = int(input("Enter the temperature in kelvin: "))
 
-        k = v + 273.15
-        print(str(k)+ " degrees kelvin")
+        k = v - 273.15
+        print(str(round(k, 2)) + " (rounded)")
+        print(str(k) + " degrees kelvin")
     elif p == "fahrenheit":
-       o = int(input("enter the temperature in kelvin: "))
-      
-       n = (o * 9/5) - 459.67
-       print(str(n) + " degrees fahrenheit")
-  
+        o = int(input("enter the temperature in kelvin: "))
+
+        n = (o * 9 / 5) - 459.67
+        print(round(n, 2) + " (rounded)")
+        print(str(n) + " degrees fahrenheit")
+    else:
+      print("you cannot convert to any other temperature")
