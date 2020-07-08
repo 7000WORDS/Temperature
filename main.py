@@ -32,6 +32,7 @@ def func():
             r = (z + 459.67) * 5 / 9
             print(str(round(r, 2)) + " (rounded)")
             print(str(r) + " degrees celsius")
+
     elif W == "kelvin":
         p = input("what temperature do you want to convert to: ")
         if p == "celsius":
