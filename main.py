@@ -9,8 +9,8 @@ def func():
         if b == "fahrenheit":
             C = int(input("Enter the temperature in celsius: "))
 
-            F = 9 / 5 * (C + 32)
-            print(round(str(F)) + " (rounded)")
+            F = (9 / 5) * C + 32
+            print(str(round(F)) + " (rounded)")
             print(str(F) + " degrees fahrenheit")
         elif b == "kelvin":
             m = int(input("enter the temperature in celsius: "))
@@ -25,9 +25,10 @@ def func():
             f = int(input("Please enter the temperature in fahrenheit: "))
 
             c = 5 / 9 * (f - 32)
+            print(str(round(c))+ " (rounded)")
             print(str(c) + " degrees celsius")
         elif l == "kelvin":
-            z = int(input("enter the temperatture in fahrenheit"))
+            z = int(input("enter the temperature in fahrenheit: "))
 
             r = (z + 459.67) * 5 / 9
             print(str(round(r, 2)) + " (rounded)")
@@ -37,7 +38,7 @@ def func():
         p = input("what temperature do you want to convert to: ")
         if p == "celsius":
             v = int(input("Enter the temperature in kelvin: "))
-
+            
             k = v - 273.15
             print(str(round(k, 2)) + " (rounded)")
             print(str(k) + " degrees kelvin")
@@ -49,3 +50,4 @@ def func():
             print(str(n) + " degrees fahrenheit")
         else:
             print("you cannot convert to any other temperature")
+func()
